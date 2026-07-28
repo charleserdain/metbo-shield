@@ -1,0 +1,6 @@
+From: IT Support <support@example.com>
+To: employee@example.com
+Subject: Scheduled maintenance completed
+Authentication-Results: example.com; spf=pass; dkim=pass; dmarc=pass
+
+The scheduled maintenance has been completed. No action is required.

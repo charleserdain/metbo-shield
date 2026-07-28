@@ -1,0 +1,36 @@
+[project]
+name = "metbo-shield"
+version = "4.0.0"
+description = "AI-assisted phishing investigation platform for SOC-style email analysis"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Charles Erdain" }]
+keywords = ["cybersecurity", "phishing", "soc", "streamlit", "mitre-attack", "threat-intelligence"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Information Technology",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Security",
+]
+dependencies = [
+  "streamlit>=1.36,<2",
+  "pandas>=2.2,<3",
+  "scikit-learn>=1.5,<2",
+  "requests>=2.32,<3",
+  "reportlab>=4.2,<5",
+  "plotly>=5.24,<7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9", "ruff>=0.6,<1"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
