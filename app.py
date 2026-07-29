@@ -20,7 +20,7 @@ pages = {
         st.Page("views/ai_copilot.py", title="AI Copilot", icon="🤖"),
         st.Page("views/threat_intelligence.py", title="Threat Intelligence", icon="🌐"),
         st.Page("views/reports.py", title="Reports", icon="📄"),
-        st.Page("views/audit_log.py", title="Audit Log", icon="☷"),
+       st.Page("views/audit_log.py", title="Audit Log", icon="📋"),
         st.Page("views/settings.py", title="Settings", icon="⚙️"),
     ]
 }
